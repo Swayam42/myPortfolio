@@ -1,6 +1,18 @@
 import { Project } from '../types/Project';
 
 export const projects: Project[] = [
+  {
+    id: '2',
+    title: 'Khandu\'s Studio',
+    description: 'A simple 3-D Bot Landing Page',
+    githubUrl: 'https://github.com/Swayam42/3-D-Bot-Landing',
+    demoUrl: 'https://khandudon.netlify.app/',
+    category: 'Web Projects',
+    difficulty: 'Basic',
+    technologies: ['HTML','CSS','JS'],
+    date: '2025-04-26',
+    featured: true,
+},
   /*
   
   {
