@@ -6,6 +6,6 @@ export default defineConfig({
   base: '/',
   plugins: [react()],
   optimizeDeps: {
-    exclude: ['lucide-react'],
+    exclude: ['lucide-react''framer-motion'],
   },
 });
