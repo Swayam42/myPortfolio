@@ -3,9 +3,9 @@ import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/',
+  base: '/',  // For root deployment on Netlify
   plugins: [react()],
   optimizeDeps: {
-    exclude: ['lucide-react''framer-motion'],
+    exclude: ['lucide-react', 'framer-motion'],  // Corrected syntax
   },
 });
