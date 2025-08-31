@@ -21,7 +21,7 @@ Check out the live version of my portfolio:
 - **TailwindCSS** – for modern styling
 - **Framer Motion** – for clean animations
 - **Vite** – for blazing-fast development
-- **Netlify** – for deployment
+- **GitHub Pages** – for deployment
 
 
 
