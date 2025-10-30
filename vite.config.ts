@@ -1,11 +1,8 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
+// Ensure built assets use relative paths to work on GitHub Pages / custom domain
 export default defineConfig({
-  base: '/',  // For root deployment on Netlify
+  base: './',
   plugins: [react()],
-  optimizeDeps: {
-    exclude: ['lucide-react', 'framer-motion'],  // Corrected syntax
-  },
-});
+})
