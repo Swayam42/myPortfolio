@@ -5,7 +5,7 @@ Welcome to my personal portfolio website! This project showcases my work, skills
 ## 🖥️ Live Demo
 
 Check out the live version of my portfolio:  
-🔗 [swayamjethi.netlify.app](https://swayamjethi.netlify.app)
+🔗 [https://swayam42.github.io/myPortfolio/](https://swayam42.github.io/myPortfolio/)
 
 ## 📌 Features
 

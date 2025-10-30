@@ -27,4 +27,3 @@ export default function Magnetic({children}) {
         React.cloneElement(children, {ref:magnetic})
     )
 }
-  

@@ -11,18 +11,18 @@ import { AnimatePresence } from 'framer-motion';
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
-  const [loader, setLoader] = useState(true); // 👈 add loader state
+  const [loader, setLoader] = useState(true); //
 
-  // Handle preloader timer
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoader(false);
     }, 3300);
 
-    return () => clearTimeout(timer); // cleanup
+    return () => clearTimeout(timer);
   }, []);
 
-  // Handle dark mode
+
   useEffect(() => {
     const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
     const savedMode = localStorage.getItem('darkMode');

@@ -1,8 +1,8 @@
 import React from 'react';
-import { Github, Linkedin, Mail, ArrowDown } from 'lucide-react';
-import Magnet from '../components/ui/magnetic-effect';
+// @ts-expect-error - JSX component without TypeScript declarations
+import Magnetic from './ui/magnetic-effect.jsx';
 import { IoIosMail } from "react-icons/io";
-  import { BsTwitterX, BsInstagram, BsGithub, BsDiscord, BsArrowDown, BsLinkedin } from "react-icons/bs";
+import { BsGithub, BsArrowDown, BsLinkedin } from "react-icons/bs";
   const Hero: React.FC = () => {
     return (
       <section id="home" className="min-h-screen flex items-center justify-center pt-20 pb-16">
@@ -34,7 +34,7 @@ import { IoIosMail } from "react-icons/io";
             
             <div className="flex justify-center space-x-6">
               {/* GitHub with magnetic effect */}
-              <Magnet>
+              <Magnetic>
                 <div className="text-white text-3xl md:text-7xl hover:cursor-pointer p-5">
                   <a 
                     href="https://github.com/Swayam42" 
@@ -46,25 +46,25 @@ import { IoIosMail } from "react-icons/io";
                     <BsGithub size={32} />
                   </a>
                 </div>
-              </Magnet>
+              </Magnetic>
   
               
-              <Magnet>
+              <Magnetic>
                 <div className="text-white text-3xl md:text-7xl hover:cursor-pointer p-5">
                   <a 
                     href="https://www.linkedin.com/in/swayam-jethi-8046251b9/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
-                    aria-label="GitHub"
+                    aria-label="LinkedIn"
                   >
                     <BsLinkedin size={32} />
                   </a>
                 </div>
-              </Magnet>
+              </Magnetic>
   
               {/* Mail with magnetic effect */}
-              <Magnet>
+              <Magnetic>
                 <div className="text-white text-3xl md:text-7xl hover:cursor-pointer p-5">
                   <a 
                     href="mailto:swayam.jethi@gmail.com" 
@@ -74,7 +74,7 @@ import { IoIosMail } from "react-icons/io";
                     <IoIosMail size={32} />
                   </a>
                 </div>
-              </Magnet>
+              </Magnetic>
             </div>
           </div>
           
@@ -91,5 +91,5 @@ import { IoIosMail } from "react-icons/io";
       </section>
     );
   };
-  
   export default Hero;
+
